@@ -1,0 +1,9 @@
+<h1> Garden Show Page </h1>
+
+<div id="list-of-plants">
+    <% @garden.plots.each do |plot| %>
+        <% plot.plants.each do |plant| %>
+            <p><%= plant.name %></p>
+        <% end %>
+    <% end %>
+</div>
